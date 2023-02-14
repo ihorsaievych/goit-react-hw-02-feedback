@@ -1,6 +1,6 @@
 //import { FeedbackOptions, Section } from 'components'; //Statistics
 import { Component } from 'react';
-import { FeedbackOptions, Container, Section } from 'components';
+import { FeedbackOptions, Container, Section, Statistics } from 'components';
 
 export class App extends Component {
   // static defaultProps = { data: [{ id: 0, label: 'unknown' }] };
@@ -67,13 +67,13 @@ export class App extends Component {
           incrementState={onIncrementState}
         ></FeedbackOptions>
         <Section title={'Statistics'} />
-        <ul>
-          <li>Good: {good}</li>
-          <li>Neutral: {neutral}</li>
-          <li>Bad: {bad}</li>
-          <li>Total: {total}</li>
-          <li>Positive feedback: {countPositiveFeedbackPercentage()} %</li>
-        </ul>
+        <Statistics
+          good={good}
+          neutral={neutral}
+          bad={bad}
+          total={total}
+          positivePercentage={countPositiveFeedbackPercentage()}
+        ></Statistics>
       </Container>
       // <Section title={'React homework template'}>
       //   <FeedbackOptions buttonList={data}></FeedbackOptions>

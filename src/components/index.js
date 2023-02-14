@@ -5,3 +5,5 @@ export * from 'components/Section/Section';
 export * from 'components/FeedbackOptions/FeedbackOptions';
 export * from 'components/ButtonOptions/ButtonOptions';
 export * from 'components/ButtonOptions/ButtonOptions.styled';
+export * from 'components/Statistics/Statistics';
+export * from 'components/Notification/Notification';
